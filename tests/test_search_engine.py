@@ -26,3 +26,4 @@ def search_word():
 def test_search_engine(docs: list, search_word: str):
     assert search(docs, search_word) == ['doc1', 'doc2']
     assert search([], search_word) == []
+    assert search(docs, "pint") == ['doc1']
